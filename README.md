@@ -94,5 +94,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements.
 
 ## Contact
-For any questions or issues, please contact [your_email@example.com](mailto:kawaljeetsingh0026@gmail.com).
+For any questions or issues, please contact [kawaljeetsingh0026@gmail.com](mailto:kawaljeetsingh0026@gmail.com).
 
