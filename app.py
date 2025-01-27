@@ -18,7 +18,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-os.environ['HF_TOKEN']=os.getenv('HF_TOKEN')
+# Get the token from environment variables
+hf_token = os.getenv('HF_TOKEN')
+
+# Check if the token is available, if not raise an error
+if hf_token is None:
+    raise ValueError("HF_TOKEN environment variable is not set")
+
+# Set the environment variable for further use
+os.environ['HF_TOKEN'] = hf_token
 embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 st.title("Conversatinal RAG with PDF uploads and Chat History")
